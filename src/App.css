@@ -1,0 +1,87 @@
+.hero-bg {
+  background: linear-gradient(
+    74.71deg,
+    #feddee 0%,
+    #fcf6fc 31.77%,
+    #c5eaed 64.58%,
+    #fdddfe 100%
+  );
+}
+
+.footer-bg {
+  background: linear-gradient(95.74deg, #0076ce -7.82%, #9400d3 143.96%);
+}
+
+.font-Inter {
+  font-family: "Inter", sans-serif;
+}
+
+.custom-shadow {
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
+}
+
+/* Horizontal Loader */
+@keyframes loader6dot1 {
+  0% {
+    fill: #616161;
+    transform: scale(1);
+  }
+  16% {
+    transform: scale(1.5);
+    fill: #0076ce;
+  }
+  70%,
+  100% {
+    transform: scale(1);
+    fill: #616161;
+  }
+}
+
+@keyframes loader6dot2 {
+  0%,
+  30% {
+    transform: scale(1);
+    fill: #616161;
+  }
+  47% {
+    transform: scale(1.5);
+    fill: #0076ce;
+  }
+  75%,
+  100% {
+    transform: scale(1);
+    fill: #616161;
+  }
+}
+
+@keyframes loader6dot3 {
+  0%,
+  47% {
+    transform: scale(1);
+    fill: #616161;
+  }
+  83% {
+    transform: scale(1.5);
+    fill: #0076ce;
+  }
+  100% {
+    transform: scale(1);
+    fill: #616161;
+  }
+}
+.loader6 svg {
+  overflow: visible;
+}
+
+.loader6 circle:first-of-type {
+  transform-origin: 5px center;
+  animation: loader6dot1 1.5s ease infinite;
+}
+.loader6 circle:nth-child(2) {
+  transform-origin: center;
+  animation: loader6dot2 1.5s ease infinite;
+}
+.loader6 circle:nth-child(3) {
+  transform-origin: 35px center;
+  animation: loader6dot3 1.5s ease infinite;
+}
