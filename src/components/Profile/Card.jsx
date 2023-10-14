@@ -3,7 +3,7 @@ import rectangle from "../../assets/images/vector/Rectangle 376.png";
 
 const Card = ({ name, fees, rating, reviews }) => {
   return (
-    <div className="w-[405px] h-[450px] rounded-2xl custom-shadow">
+    <div className="w-[370px] h-[470px] rounded-2xl custom-shadow">
       <img src={rectangle} alt="rectangle image" />
       <div className="flex justify-between px-7 mt-5">
         <p className="font-bold text-lg">{name}</p>

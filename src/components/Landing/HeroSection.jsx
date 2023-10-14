@@ -7,10 +7,10 @@ import hero_vector from "../../assets/images/vector/hero_vector.png";
 
 const HeroSection = () => {
   return (
-    <div className="h-[80%] hero-bg">
+    <div className="w-full lg:h-[800px] hero-bg">
       <NavBar />
-      <div className="flex h-[70%] items-center gap-20 px-10 pl-14">
-        <div className="w-2/5">
+      <div className="flex flex-col lg:flex-row h-[70%] items-center lg:justify-center lg:gap-20 md:px-10 px-5">
+        <div className="w-full mt-20 lg:w-2/5">
           <h1 className="font-bold text-5xl">
             Find{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-br from-[#0076CE] to-[#9400D3]">
@@ -25,13 +25,22 @@ const HeroSection = () => {
           </p>
           <SearchBox />
         </div>
-        <div className="w-1/2 flex gap-5">
-          <img src={hero_1} className="mt-52 z-10" />
-          <img src={hero_2} className="mt-32 mb-14 z-10" />
-          <img src={hero_3} className="mt-40 mb-10 z-10" />
+        <div className="w-full lg:w-1/2 flex justify-center gap-5 ">
+          <img
+            src={hero_1}
+            className="mt-16 lg:mt-52 z-10 w-40 md:w-80 lg:w-full"
+          />
+          <img
+            src={hero_2}
+            className="mt-8 mb:7 lg:mt-32 lg:mb-14 z-10 w-40 md:w-80 lg:w-full"
+          />
+          <img
+            src={hero_3}
+            className="mt-12 mb:5 lg:mt-40 lg:mb-10 z-10 w-40 md:w-80 hidden md:block lg:w-full"
+          />
         </div>
       </div>
-      <img src={hero_vector} className="relative bottom-8" />
+      <img src={hero_vector} />
     </div>
   );
 };

@@ -72,7 +72,7 @@ const JoinUs = () => {
           className="absolute -top-20 left-0 w-full h-full object-cover"
           alt="Background Image"
         />
-        <div className="p-3 md:p-5 lg:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center ">
+        <div className="px-3 md:px-5 lg:px-10 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center place-items-center">
           {cardDetail.map((ele, i) => (
             <Card
               key={i}
@@ -87,7 +87,7 @@ const JoinUs = () => {
           ))}
         </div>
       </div>
-      <div className="text-sm px-10">
+      <div className="text-sm px-10 mt-10">
         * For forms AOC-4 and MGT-7, you will be charged a penalty of ₹200{" "}
         <span className="font-bold">every day</span> until you file the form .
         There is no maximum penalty amount. So, if you don't file the form for a

@@ -23,9 +23,11 @@ const recomendations = [
 
 const Recomendations = () => {
   return (
-    <div className="mt-28 px-16">
-      <h1 className="text-3xl font-bold">Recommended for you</h1>
-      <div className="mt-10 flex gap-8">
+    <div className="mt-28 px-10">
+      <h1 className="text-3xl font-bold text-center lg:text-start">
+        Recommended for you
+      </h1>
+      <div className="mt-10 flex gap-8 items-center justify-center flex-wrap">
         {recomendations.map((ele, i) => (
           <Card
             key={i}

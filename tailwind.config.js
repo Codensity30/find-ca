@@ -6,6 +6,9 @@ export default {
       colors: {
         "custom-blue": "#0076CE",
       },
+      screens: {
+        lg: "1200px",
+      },
     },
   },
   plugins: [],

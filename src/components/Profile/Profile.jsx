@@ -37,7 +37,7 @@ const Profile = () => {
   ) : (
     <>
       <NavBar />
-      <div className="flex justify-between px-16 mt-20 w-full">
+      <div className="flex flex-col gap-14 lg:flex-row justify-center lg:justify-between px-5 lg:px-16 mt-20 w-full">
         <User caData={caData} />
         <AboutUser caData={caData} />
       </div>

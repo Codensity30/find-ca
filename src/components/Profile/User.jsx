@@ -4,7 +4,7 @@ import slider from "../../assets/svg/slider.svg";
 
 const User = ({ caData }) => {
   return (
-    <div className="w-1/3">
+    <div className=" w-full lg:w-1/3">
       <h1 className="text-3xl font-bold">{caData.name}</h1>
       <p className="mt-5">{caData.intro}</p>
       <div className="flex items-center gap-1 mt-5">

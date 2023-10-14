@@ -3,7 +3,7 @@ import slider from "../../assets/svg/slider_dark.svg";
 
 const AboutUser = ({ caData }) => {
   return (
-    <div className="w-1/2">
+    <div className="w-full lg:w-1/2">
       <div className="h-96 w-full">
         <img
           src="https://source.unsplash.com/random/?finance"
