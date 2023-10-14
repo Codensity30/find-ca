@@ -10,6 +10,10 @@ const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
+const errorHandler = (e) => {
+  console.log(`Error occured ${e}`);
+};
+
 const SearchBox = () => {
   //* These states and hooks are related to snackbar --------------------------------------------------
   const [open, setOpen] = React.useState(false);
@@ -33,7 +37,7 @@ const SearchBox = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/ca");
+        const response = await fetch(import.meta.env.VITE_API_KEY);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }

@@ -48,7 +48,7 @@ const AboutUser = ({ caData }) => {
           </p>
           <div className="px-1 mt-3">
             {caData.about.services.map((ele, i) => (
-              <li>{ele}</li>
+              <li key={i}>{ele}</li>
             ))}
           </div>
         </div>
@@ -56,7 +56,7 @@ const AboutUser = ({ caData }) => {
           <p className="uppercase text-[#999999] font-bold text-sm">why me?</p>
           <div className="px-1 mt-3">
             {caData.about.benefits.map((ele, i) => (
-              <li>{ele}</li>
+              <li key={i}>{ele}</li>
             ))}
           </div>
         </div>

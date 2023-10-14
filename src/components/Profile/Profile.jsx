@@ -15,7 +15,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/ca/${id}`);
+        const response = await fetch(`${import.meta.env.VITE_API_KEY}/${id}`);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
